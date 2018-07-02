@@ -1,0 +1,40 @@
+<!DOCTYPE Html>
+<html>
+
+<head>
+    <title>
+        Currency Converter
+    </title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/currency.css">
+    <script src="scripts/currency.js"></script>
+</head>
+
+<body onload = "loadCurrencies()">
+    <div class="container main-panel">
+        <div class="col-md-12 panel">
+            <div class="row header">
+                Currency Converter
+            </div>
+            <div class="row">
+                <div class="col-md-2 amt">Amount:</div>
+                <div class="col-md-10">
+                    <input type = "text" oninput = "convertCurrency()" class="form-control" id="amount"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 amt">From:</div>
+                <div class="col-md-4"><select onchange="convertCurrency()" id="from"></select></div>
+                <div class="col-md-2 amt">To:</div>
+                <div class="col-md-4"><select id="to"></select></div>
+            </div>
+            <div class="row amt">
+                Result : <span id="result"></span>
+            </div>
+        </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+body {
+    background-color: teal
+}
+.main-panel {
+    margin-top: 200px
+}
+
+div.row {
+    padding: 10px
+}
+
+.header {
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+}
+
+.amt {
+    color: white;
+    font-weight: bold;
+}
+
+.panel {
+    border-color: crimson;
+}
